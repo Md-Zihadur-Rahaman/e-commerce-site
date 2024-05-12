@@ -14,26 +14,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>About</title>
   </head>
-  <body class="max-w-screen-2xl mx-auto">
+  <body class="">
     <header class="border-b-2">
       <!-- top section -->
-      <section class="flex justify-around items-center w-full h-12 bg-black">
-        <div></div>
-        <div>
-          <p class="text-white text-sm">
-            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-            <span><a href="#" class="text-base underline">Shop Now</a></span>
-          </p>
-        </div>
-        <div class="flex justify-center items-center gap-1">
-          <p class="text-white text-sm">English</p>
-          <img src="assets/icon/down-arrow.svg" alt="" class="w-3 h-3" />
-        </div>
-      </section>
+      <div class="bg-black">
+        <section
+          class="flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto p-4 gap-4"
+        >
+          <div class="hidden lg:block lg:w-3/12"></div>
+          <div class="w-full lg:w-6/12 flex justify-center">
+            <p class="text-white text-sm text-center">
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+              <span><a href="#" class="text-base underline">Shop Now</a></span>
+            </p>
+          </div>
+          <div
+            class="w-full lg:w-3/12 flex justify-center lg:justify-end items-center gap-1"
+          >
+            <p class="text-white text-sm">English</p>
+            <img src="assets/icon/down-arrow.svg" alt="" class="w-3 h-3" />
+          </div>
+        </section>
+      </div>
       <!-- nav section -->
-      <nav class="flex justify-around items-center my-6">
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center my-6 p-4 lg:p-0"
+      >
+        <!-- left -->
         <p class="text-black text-xl font-semibold">Exclusive</p>
-        <div class="flex gap-3">
+        <!-- middle -->
+        <div class="hidden lg:flex flex-row gap-3">
           <a
             href="index.html"
             class="border-b-2 border-white hover:border-b-2 hover:border-black"
@@ -55,7 +66,8 @@
             >Sign up</a
           >
         </div>
-        <div class="flex items-center gap-4">
+        <!-- right -->
+        <div class="hidden lg:flex flex-row items-center gap-4">
           <!-- search field -->
           <div
             class="flex items-center gap-6 bg-[#f5f5f5] rounded-md py-2 px-6"
@@ -73,46 +85,56 @@
             <img src="assets/icon/user-black.jpg" alt="" class="w-6 h-6" />
           </div>
         </div>
+        <!-- hamburger menu -->
+        <div class="block lg:hidden">
+          <img src="assets/icon/hamburger-menu.png" alt="" class="w-6 h-6" />
+        </div>
       </nav>
     </header>
     <!-- item title section -->
-    <section class="w-[calc(100% - 176px)] ml-24 mr-20 flex gap-5 my-20">
+    <section class="max-w-7xl mx-auto flex gap-5 my-10">
       <p class="text-[#8f8b8b]">
         Home /
         <span class="text-black font-semibold">About</span>
       </p>
     </section>
     <!-- Main Section  -->
-    <main class="w-full flex gap-5 my-20">
-      <!-- Create an account section -->
-      <section
-        class="w-[calc(50%-224px)] flex flex-col gap-6 justify-center ml-24 mr-32"
-      >
-        <h1 class="text-4xl font-bold">Our Story</h1>
-        <p class="">
+    <main
+      class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 my-10 p-4 lg:p-0"
+    >
+      <!-- Right section -->
+      <section class="w-full flex flex-col gap-6 justify-center">
+        <h1 class="text-4xl font-bold text-center lg:text-left">Our Story</h1>
+        <p class="text-justify">
           Launced in 2015, Exclusive is South Asia’s premier online shopping
           makterplace with an active presense in Bangladesh. Supported by wide
           range of tailored marketing, data and service solutions, Exclusive has
           10,500 sallers and 300 brands and serves 3 millioons customers across
           the region.
         </p>
-        <p class="">
+        <p class="text-justify">
           Exclusive has more than 1 Million products to offer, growing at a very
           fast. Exclusive offers a diverse assotment in categories ranging from
           consumer.
         </p>
       </section>
       <!-- left section -->
-      <aside class="w-6/12">
-        <img src="assets/image/about-banner-image.jpg" alt="" />
+      <aside class="w-full">
+        <img
+          src="assets/image/about-banner-image.jpg"
+          alt=""
+          class="w-full h-full"
+        />
       </aside>
     </main>
     <!-- Buy & Sell statistics  -->
     <section>
-      <div class="w-[calc(100% - 176px)] my-10 ml-24 mr-20 flex gap-4">
+      <div
+        class="max-w-7xl mx-auto my-10 flex flex-col lg:flex-row gap-4 p-4 lg:p-0"
+      >
         <!-- Item 1 -->
         <div
-          class="w-72 h-60 flex flex-col justify-center items-center gap-4 border-2 border-[#F5F5F5] rounded-md"
+          class="w-full h-64 flex flex-col justify-center items-center gap-4 border-2 border-[#F5F5F5] rounded-md"
         >
           <img src="assets/icon/seller-white.jpg" alt="" class="w-14 h-14" />
           <h1 class="text-2xl font-bold">10.5k</h1>
@@ -120,7 +142,7 @@
         </div>
         <!-- Item 2 -->
         <div
-          class="w-72 h-60 bg-[#DB4444] flex flex-col justify-center items-center gap-4 border-2 border-[#F5F5F5] rounded-md"
+          class="w-full h-64 bg-[#DB4444] flex flex-col justify-center items-center gap-4 border-2 border-[#F5F5F5] rounded-md"
         >
           <img
             src="assets/icon/annual.jpg"
@@ -132,7 +154,7 @@
         </div>
         <!-- Item 3 -->
         <div
-          class="w-72 h-60 flex flex-col justify-center items-center gap-4 border-2 border-[#F5F5F5] rounded-md"
+          class="w-full h-64 flex flex-col justify-center items-center gap-4 border-2 border-[#F5F5F5] rounded-md"
         >
           <img src="assets/icon/customer.jpg" alt="" class="w-14 h-14" />
           <h1 class="text-2xl font-bold">45.5k</h1>
@@ -140,7 +162,7 @@
         </div>
         <!-- Item 4 -->
         <div
-          class="w-72 h-60 flex flex-col justify-center items-center gap-4 border-2 border-[#F5F5F5] rounded-md"
+          class="w-full h-64 flex flex-col justify-center items-center gap-4 border-2 border-[#F5F5F5] rounded-md"
         >
           <img src="assets/icon/annual.jpg" alt="" class="w-14 h-14" />
           <h1 class="text-2xl font-bold">25k</h1>
@@ -149,9 +171,11 @@
       </div>
     </section>
     <!-- team member section -->
-    <section class="w-[calc(100% - 176px)] mt-20 mb-10 ml-24 mr-20 flex gap-4">
+    <section
+      class="max-w-7xl mx-auto mt-20 mb-10 flex flex-col lg:flex-row gap-4 p-4 lg:p-0"
+    >
       <!-- member-1 -->
-      <div class="w-4/12 flex flex-col gap-4">
+      <div class="w-full flex flex-col gap-4 items-center lg:items-start">
         <img src="assets/image/tom.jpg" alt="" class="w- h-" />
         <h1 class="text-2xl font-bold">Tom Cruise</h1>
         <p>Founder & Chairman</p>
@@ -162,7 +186,7 @@
         </div>
       </div>
       <!-- member-2 -->
-      <div class="w-4/12 flex flex-col gap-4">
+      <div class="w-full flex flex-col gap-4 items-center lg:items-start">
         <img src="assets/image/emma.jpg" alt="" class="w- h-" />
         <h1 class="text-2xl font-bold">Emma Watson</h1>
         <p>Managing Director</p>
@@ -173,7 +197,7 @@
         </div>
       </div>
       <!-- member-3 -->
-      <div class="w-4/12 flex flex-col gap-4">
+      <div class="w-full flex flex-col gap-4 items-center lg:items-start">
         <img src="assets/image/will.jpg" alt="" class="w- h-" />
         <h1 class="text-2xl font-bold">Will Smith</h1>
         <p>Product Designer</p>
@@ -186,29 +210,29 @@
     </section>
     <!-- slider-button -->
     <section
-      class="w-[calc(100% - 176px)] my-1 ml-24 mr-20 flex items-center justify-center gap-4"
+      class="max-w-7xl mx-auto my-1 hidden lg:flex items-center justify-center"
     >
       <img src="assets/icon/slider-button.svg" alt="" />
     </section>
 
     <!-- Contact and Service  -->
     <section
-      class="w-[calc(100% - 176px)] my-24 ml-24 mr-20 flex justify-center gap-4"
+      class="max-w-7xl mx-auto my-24 flex flex-col lg:flex-row justify-center gap-4"
     >
       <!-- Item 1 -->
-      <div class="w-64 h-40 flex flex-col justify-center items-center gap-2">
+      <div class="w-full h-40 flex flex-col justify-center items-center gap-2">
         <img src="assets/icon/Services.svg" alt="" class="w-14 h-14" />
         <h1 class="text-base font-bold">FREE AND FAST DELIVERY</h1>
         <p class="text-sm">Free delivery for all orders over $140</p>
       </div>
       <!-- Item 2 -->
-      <div class="w-64 h-40 flex flex-col justify-center items-center gap-2">
+      <div class="w-full h-40 flex flex-col justify-center items-center gap-2">
         <img src="assets/icon/Services (1).svg" alt="" class="w-14 h-14" />
         <h1 class="text-base font-bold">24/7 CUSTOMER SERVICE</h1>
         <p class="text-sm">Friendly 24/7 customer support</p>
       </div>
       <!-- Item 3 -->
-      <div class="w-64 h-40 flex flex-col justify-center items-center gap-2">
+      <div class="w-full h-40 flex flex-col justify-center items-center gap-2">
         <img src="assets/icon/Services (2).svg" alt="" class="w-14 h-14" />
         <h1 class="text-base font-bold">MONEY BACK GUARANTEE</h1>
         <p class="text-sm">We return money within 30 days</p>
@@ -216,9 +240,11 @@
     </section>
     <!-- footer section -->
     <footer class="w-full bg-black">
-      <section class="w-[calc(100% - 176px)] my-10 ml-24 mr-20 p-4 flex gap-10">
+      <section
+        class="max-w-7xl mx-auto my-10 p-5 flex flex-col lg:flex-row gap-10"
+      >
         <!-- exclusive section -->
-        <div class="w-3/12 flex flex-col gap-3">
+        <div class="w-full flex flex-col gap-3">
           <h1 class="text-xl text-white font-bold">Exclusive</h1>
           <h2 class="text-base text-white font-semibold">Subscribe</h2>
           <p class="text-white text-sm">We return money within 30 days</p>
@@ -235,7 +261,7 @@
           </div>
         </div>
         <!-- Support section -->
-        <div class="w-2/12 flex flex-col gap-3">
+        <div class="w-full flex flex-col gap-3">
           <h2 class="text-base text-white font-semibold">Support</h2>
           <p class="text-white text-sm">
             111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
@@ -244,7 +270,7 @@
           <p class="text-white text-sm">+88015-88888-9999</p>
         </div>
         <!-- Account section -->
-        <div class="w-2/12 flex flex-col gap-3">
+        <div class="w-full flex flex-col gap-3">
           <h2 class="text-base text-white font-semibold">Account</h2>
           <p class="text-white text-sm">My Account</p>
           <p class="text-white text-sm">Login / Register</p>
@@ -253,7 +279,7 @@
           <p class="text-white text-sm">Shop</p>
         </div>
         <!-- Quick Link section -->
-        <div class="w-2/12 flex flex-col gap-3">
+        <div class="w-full flex flex-col gap-3">
           <h2 class="text-base text-white font-semibold">Quick Link</h2>
           <p class="text-white text-sm">Privacy Policy</p>
           <p class="text-white text-sm">Terms Of Use</p>
@@ -261,7 +287,7 @@
           <p class="text-white text-sm">Contact</p>
         </div>
         <!-- Download App section -->
-        <div class="w-3/12 flex flex-col gap-3">
+        <div class="w-full flex flex-col gap-3">
           <h2 class="text-base text-white font-semibold">Download App</h2>
           <p class="text-white text-sm">Save $3 with App New User Only</p>
           <!-- image section -->
@@ -272,11 +298,11 @@
             </div>
             <div class="w-6/12 flex flex-col gap-2">
               <!-- play store image -->
-              <div class="w-full h-6/12">
+              <div class="w-full h-3/6">
                 <img src="assets/image/google-play-store.svg" alt="" />
               </div>
               <!-- app store image -->
-              <div class="w-full h-6/12">
+              <div class="w-full h-3/6">
                 <img src="assets/image/AppStore.svg" alt="" />
               </div>
             </div>
@@ -291,7 +317,7 @@
         </div>
       </section>
       <!-- Copyright -->
-      <div class="w-[calc(100% - 176px)] py-5 ml-24 mr-20 flex justify-center">
+      <div class="max-w-7xl mx-auto py-5 flex justify-center">
         <p class="text-[#F9F9F933]">Copyright Rimel 2022. All right reserved</p>
       </div>
     </footer>
